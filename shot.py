@@ -7,7 +7,6 @@ from constants import SHOT_RADIUS, LINE_WIDTH
 class Shot(CircleShape):
     def __init__(self, x, y):
         super().__init__(x, y, SHOT_RADIUS)
-        print (self.position)
 
     def draw(self, screen: pygame.Surface):
         pygame.draw.circle(screen, "white", self.position, self.radius, LINE_WIDTH )
